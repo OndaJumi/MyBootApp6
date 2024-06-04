@@ -1,10 +1,9 @@
-package jp.te4a.spring.boot.myapp6.mybootapp6;
+package jp.te4a.spring.boot.myapp7.mybootapp7;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-
 import org.springframework.stereotype.Repository;
 
 @Repository //@RepositoryはDI(@Autowired)対象
