@@ -1,4 +1,4 @@
-package jp.te4a.spring.boot.myapp8;
+package jp.te4a.spring.boot.myapp9.mybootapp9;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @RequestMapping("books")/* /booksにアクセスされた時のコントローラ */
-public class Book1Controller {
+public class BookController {
     @Autowired
     BookService bookService;
 
@@ -27,7 +27,7 @@ public class Book1Controller {
     }
     @PostMapping(path="create")/* /booksにGET要求 */
         String create(BookForm form, Model mode) {
-        bookService.create(form);
+        bookService.save(form);
         return "redirect:/books";
     }
     @PostMapping(path = "edit", params = "form")/* /books/ceditにパラメタformを含むPOST要求 */
