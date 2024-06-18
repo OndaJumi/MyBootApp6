@@ -1,0 +1,10 @@
+/*テキストボックス用CSS*/
+.error-input {
+    border-color: #b94a48;
+    margin-left: 5px;
+    }
+/*エラーメッセージ用CSS*/
+.error-messages {
+    color: #b94a48;
+}
+    
